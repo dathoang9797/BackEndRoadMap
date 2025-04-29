@@ -398,4 +398,20 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+/.vs
+/src/*/bin
+/src/*/obj
+/test/*/bin
+/test/*/obj
+/src/*/*/bin
+/src/*/*/obj
+*/*/*/bin
+*/*/*/obj
+*.user
+/ngrok.exe
+/localtunnel_server.bat
+.DS_Store
+antifacts
+BenchmarkDotNet.Artifacts
 /.idea
+global.json
