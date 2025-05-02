@@ -1,3 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Basics_OOP;
 
-Console.WriteLine("Hello, World!");
+var rng = new Random();
+var goodGuy = new Warrior("Bob", Faction.GoodGuys);
+var badGuy = new Warrior("Joe", Faction.BadGuys);
+
+while (goodGuy.IsAlive && badGuy.IsAlive)
+{
+    if (rng.Next(0, 10) < 5)
+    {
+        goodGuy.Attack(badGuy);
+    }
+    else
+    {
+        badGuy.Attack(goodGuy);
+    }
+    Thread.Sleep(100);
+}
